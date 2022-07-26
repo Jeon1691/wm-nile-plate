@@ -1,6 +1,6 @@
 {
   "name": "nileplate-cli",
-  "version": "1.0.8",
+  "version": "1.0.13",
   "description": "The frontend boilerplate with nile project",
   "license": "MIT",
   "repository": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/Jeon1691/wm-nile-plate/issues"
   },
   "bin": {
-    "nileplate": "lib/index.js"
+    "nileplate-cli": "lib/index.js"
   },
   "files": [
     "lib",
@@ -22,7 +22,7 @@
     "dev:global": "sudo nodemon --watch src -e ts --ignore lib --exec \"npm run build:cli & npm run global\"",
     "build:cli": "npm run clean:cli && tsc && babel src --out-dir lib --extensions \".ts,.js,.json\" --source-maps inline",
     "clean:cli": "rm -rf ./lib",
-    "global": "npm i -g --quiet",
+    "global": "sudo npm i -g --quiet",
     "test": "jest",
     "lint": "eslint ."
   },
