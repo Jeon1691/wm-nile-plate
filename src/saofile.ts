@@ -6,7 +6,7 @@ import chalk from "chalk";
 import { v4 as uuidv4 } from "uuid";
 
 import Analytics from "analytics-node";
-const analytics = new Analytics(process.env.SEGMENT_KEY ?? "");
+const analytics = new Analytics("XLkaBJGUXzUdxLPgWzYe2fLQbxm9cF5V");
 
 import { GeneratorConfig, Action } from "../@types/sao";
 import {
