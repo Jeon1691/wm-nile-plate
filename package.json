@@ -1,6 +1,6 @@
 {
   "name": "nileplate-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The frontend boilerplate with nile project",
   "license": "MIT",
   "repository": {
@@ -19,8 +19,8 @@
   ],
   "scripts": {
     "dev:cli": "SEGMENT_KEY=XLkaBJGUXzUdxLPgWzYe2fLQbxm9cF5V nodemon --watch src -e ts --ignore lib --exec npm run build:cli",
-    "dev:global": "sudo nodemon --watch src -e ts --ignore lib --exec \"npm run build:cli & npm run global\"",
-    "build:cli": "npm run clean:cli && tsc && babel src --out-dir lib --extensions \".ts,.js,.json\" --source-maps inline",
+    "dev:global": "SEGMENT_KEY=XLkaBJGUXzUdxLPgWzYe2fLQbxm9cF5V sudo nodemon --watch src -e ts --ignore lib --exec \"npm run build:cli & npm run global\"",
+    "build:cli": "SEGMENT_KEY=XLkaBJGUXzUdxLPgWzYe2fLQbxm9cF5V npm run clean:cli && tsc && babel src --out-dir lib --extensions \".ts,.js,.json\" --source-maps inline",
     "clean:cli": "rm -rf ./lib",
     "global": "npm i -g --quiet",
     "test": "jest",
